@@ -1,4 +1,4 @@
-// Contoh data riwayat penyetoran (bisa diganti dengan data dari server)
+// Contoh data riwayat penyetoran
 const riwayatData = [
   { tanggal: "12 Okt 2025", jenis: "Plastik", berat: 3.2, keuntungan: "Rp 20.000" },
   { tanggal: "15 Okt 2025", jenis: "Kertas", berat: 5.1, keuntungan: "Rp 30.000" },
@@ -23,6 +23,6 @@ riwayatData.forEach((data, index) => {
 // Tombol logout sederhana
 document.getElementById("logoutBtn").addEventListener("click", () => {
   if (confirm("Yakin ingin keluar dari dashboard ReGreen?")) {
-    window.location.href = "login.html"; // arahkan ke halaman login (opsional)
+    window.location.href = "login.html"; 
   }
 });
