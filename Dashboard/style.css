@@ -1,17 +1,20 @@
 body {
   background-color: #f8f9fa;
   font-family: 'Segoe UI', sans-serif;
+  height: 100%;
 }
 
 .sidebar {
-  height: 100vh;
-  background-color: #0b5345;
-  color: white;
-  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #dce8c6;
+  padding: 20px;
 }
 
 .sidebar a {
-  color: white;
+  color: black;
+  font-weight: bold;
   text-decoration: none;
   display: block;
   padding: 10px 20px;
@@ -21,22 +24,9 @@ body {
 
 .sidebar a:hover,
 .sidebar a.active {
-  background-color: #117864;
+  background-color: #CDD9BF;
 }
 
 .content {
   padding: 2rem;
-}
-
-.card {
-  border-radius: 10px;
-}
-
-.card-header {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-.table-hover tbody tr:hover {
-  background-color: #e9f7ef;
 }
