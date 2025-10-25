@@ -1,0 +1,74 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', sans-serif;
+    height: 100%;
+  }
+  
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #dce8c6;
+    padding: 20px;
+  }
+  
+  .sidebar a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: 0.2s;
+  }
+  
+  .sidebar a:hover,
+  .sidebar a.active {
+    background-color: #CDD9BF;
+  }
+  
+  .content {
+    padding: 2rem;
+  }
+
+  .btn-terima {
+    background-color: #558B3E; 
+    color: white;
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 4px 14px;
+    font-size: 14px;
+    border: none;
+    transition: all 0.2s ease;
+  }
+
+  .btn-terima:hover {
+    background-color: #45a049;
+  }
+
+  .btn-terima:active {
+    background-color: #3e8e41;
+  }
+
+  .btn-tolak {
+    background-color: #8B3E3E; 
+    color: white;
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 4px 14px;
+    font-size: 14px;
+    border: none;
+    transition: all 0.2s ease;
+  }
+
+  .btn-tolak:hover {
+    background-color: #a04545;
+  }
+
+  .btn-tolak:active {
+    background-color: #8e3e3e;
+  }
+
+  
+  
+  
