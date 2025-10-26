@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard ReGreen</title>
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Sidebar -->
+        <nav class="col-md-3 col-lg-2 d-md-block sidebar min-vh-100">
+          <img
+            src="../assets/logo-regreen-with-text.png"
+            alt="ReGreen Logo"
+            class="my-4"
+            style="
+              max-width: 200px;
+              width: 100%;
+              display: block;
+              margin: 20px auto;
+            "
+          />
+          <a href="../Dashboard/dashboard.html"
+            ><i class="bi bi-house me-2"></i>Dashboard</a
+          >
+          <a href="#" class="active"
+            ><i class="bi bi-calendar-check me-2"></i>Pengambilan Sampah</a
+          >
+          <a href="../validasiarea/validasiarea.html"
+            ><i class="bi bi-geo-alt me-2"></i>Pendaftaran Area</a
+          >
+          <a href="../Keuntungan/keuntungan.html"
+            ><i class="bi bi-cash-stack me-2"></i>Keuntungan</a
+          >
+          <div class="logout">
+            <a href="#" id="logoutBtn">
+              <i class="bi bi-box-arrow-left me-2"></i>Logout</a
+            >
+          </div>
+        </nav>
+
+        <!-- Content -->
+        <main class="col-md-9 ms-sm-auto col-lg-10 content">
+          <h3 class="mb-4">Penjadwalan</h3>
+
+          <!--Jadwal Pengambilan Sampah-->
+          <div
+            class="container my-4 p-4 rounded-4 border border-success"
+            style="background-color: #d6e6c4"
+          >
+            <form action="" id="jadwalForm">
+              <div class="mb-3">
+                <label class="form-label fw-semibold">Nama Kurir</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Masukkan nama kurir"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label fw-semibold">Jam</label>
+                <div class="input-group">
+                  <input type="time" class="form-control" required />
+                  <span
+                    class="input-group-text bg-success-subtle border-0 fw-bold"
+                    >-</span
+                  >
+                  <input type="time" class="form-control" required />
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label fw-semibold">Hari</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Masukkan hari"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label fw-semibold"
+                  >Tanggal, Bulan dan Tahun</label
+                >
+                <input type="date" class="form-control" />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label fw-semibold">Jenis Sampah</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Masukkan jenis sampah"
+                />
+              </div>
+
+              <div class="mb-4">
+                <label class="form-label fw-semibold">Area Penjemputan</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Masukkan area penjemputan"
+                />
+              </div>
+
+              <div class="text-center">
+                <button
+                  type="button"
+                  class="btn px-4"
+                  style="background-color: #6aa84f; color: white"
+                  data-bs-toggle="modal"
+                  data-bs-target="#successModal"
+                >
+                  Tambah Jadwal
+                </button>
+              </div>
+            </form>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- Modal Sukses -->
+    <div class="modal fade" id="successModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-center p-4 border-0 rounded-4">
+          <i class="bi bi-check-circle-fill fs-1 text-success"></i>
+          <h5 class="mt-3 fw-semibold">Jadwal Berhasil Ditambahkan!</h5>
+          <button
+            type="button"
+            class="btn btn-success mt-4"
+            data-bs-dismiss="modal"
+          >
+            Kembali
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
